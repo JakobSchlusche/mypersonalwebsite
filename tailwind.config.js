@@ -1,0 +1,14 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./dist/*.{html,js}"],
+  theme: {
+    extend: {
+      animation: {"golden-horizon":"golden-horizon 5s ease infinite",
+        "blue-galaxy":"blue-galaxy 10s ease infinite"
+      },
+      keyframes: {"golden-horizon":{"0%":{"background":"linear-gradient(-45deg, #ffd400, #ffad00, #ff6e00, #ff2700)","backgroundSize":"200% 200%","backgroundPosition":"0% 100%"},"50%":{"background":"linear-gradient(-90deg, #ffd400, #ffad00, #ff6e00, #ff2700)","backgroundSize":"200% 200%","backgroundPosition":"100% 0%"},"100%":{"background":"linear-gradient(-45deg, #ffd400, #ffad00, #ff6e00, #ff2700)","backgroundSize":"200% 200%","backgroundPosition":"0% 100%"}},
+    "blue-galaxy":{"0%":{"background":"radial-gradient(100% 225% at 0 100%, #50009a 0, #001aff 100%), linear-gradient(100deg, #fb00a5 50%, #6900cb 100%), linear-gradient(200deg, #8dada4 0, #12de81 100%), linear-gradient(-3deg, #1dadfe 0, #50009a 50%)","backgroundSize":"100% 100%","backgroundPosition":"0% 100%","backgroundBlendMode":"color-dodge, color-burn, color-burn, normal"},"20%":{"background":"radial-gradient(100% 225% at 0 100%, #50009a 0, #001aff 100%), linear-gradient(100deg, #fb00a5 50%, #6900cb 100%), linear-gradient(200deg, #8dada4 0, #12de81 100%), linear-gradient(-3deg, #1dadfe 0, #50009a 50%)","backgroundSize":"105% 105%","backgroundPosition":"10% 100%","backgroundBlendMode":"color-dodge, color-burn, color-burn, normal"},"40%":{"background":"radial-gradient(100% 225% at 0 100%, #50009a 0, #001aff 100%), linear-gradient(100deg, #fb00a5 50%, #6900cb 100%), linear-gradient(200deg, #8dada4 0, #12de81 100%), linear-gradient(-3deg, #1dadfe 0, #50009a 50%)","backgroundSize":"110% 300%","backgroundPosition":"20% 80%","backgroundBlendMode":"color-dodge, color-burn, color-burn, normal"},"60%":{"background":"radial-gradient(100% 225% at 0 100%, #50009a 0, #001aff 100%), linear-gradient(100deg, #fb00a5 50%, #6900cb 100%), linear-gradient(200deg, #8dada4 0, #12de81 100%), linear-gradient(-3deg, #1dadfe 0, #50009a 50%)","backgroundSize":"115% 115%","backgroundPosition":"30% 70%","backgroundBlendMode":"color-dodge, color-burn, color-burn, normal"},"80%":{"background":"radial-gradient(100% 225% at 0 100%, #50009a 0, #001aff 100%), linear-gradient(100deg, #fb00a5 50%, #6900cb 100%), linear-gradient(200deg, #8dada4 0, #12de81 100%), linear-gradient(-3deg, #1dadfe 0, #50009a 50%)","backgroundSize":"250% 120%","backgroundPosition":"40% 60%","backgroundBlendMode":"color-dodge, color-burn, color-burn, normal"},"100%":{"background":"radial-gradient(100% 225% at 0 100%, #50009a 0, #001aff 100%), linear-gradient(100deg, #fb00a5 50%, #6900cb 100%), linear-gradient(200deg, #8dada4 0, #12de81 100%), linear-gradient(-3deg, #1dadfe 0, #50009a 50%)","backgroundSize":"100% 100%","backgroundPosition":"0% 100%","backgroundBlendMode":"color-dodge, color-burn, color-burn, normal"}},},
+      plugins: [],
+    },
+  },
+}
